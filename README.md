@@ -25,3 +25,12 @@ python manage.py runserver
 ```
 
 Navigate to to http://127.0.0.1:8000
+
+To create the docker image, run:
+
+docker build -t counter-app .
+
+To run the docker image, run:
+
+docker run -d -p 8000:8000 counter-app:latest
+
